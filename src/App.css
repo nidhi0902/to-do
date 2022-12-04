@@ -1,38 +1,81 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: linear-gradient(79deg, #dc72d8, #f0c5f0 48%, #399beb);
 }
 
-.App-link {
-  color: #61dafb;
+.todo-form-container{
+  display: flex;
+  flex-direction:column;
+  gap: 10px;  
+}
+.todo-form {
+  flex-direction:row;
+}
+@media screen and (min-width: 600px){
+  .todo-form-container{
+    padding:5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  text-align: left;
+  padding: 0.25rem 0;
 }
+
+.todo-input {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 9px;
+}
+
+.button-add {
+  margin: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius:10px;
+  cursor:pointer;
+}
+.button-add2{
+  background: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor:pointer;
+  color: #d45cd0;
+}
+
+.list-item{
+  display: flex;
+  margin: 20px 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+.table-todo{
+  margin: auto;
+}
+.table-completed{
+  margin: auto;
+}
+.rows {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 19px;
+}
+td{
+width:100px;
+text-align:center;
+border:0px solid #ea85d3;
+padding:15px
+}
+
+
